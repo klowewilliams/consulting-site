@@ -1,3 +1,28 @@
 .intro-text {
   color: black;
 }
+
+
+.intro-heading {
+  position: relative;
+  -webkit-animation: mymove 2s; /* Chrome, Safari, Opera */
+  animation: mymove 2s;
+}
+
+/* Chrome, Safari, Opera */
+#animated {-webkit-animation-timing-function: ease-in;}
+
+/* Standard syntax */
+#animated {animation-timing-function: ease-in;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: -300px;}
+    to {left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 50px;}
+}
